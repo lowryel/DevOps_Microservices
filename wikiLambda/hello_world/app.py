@@ -2,7 +2,7 @@ import json
 import wikipedia
 
 # prints when function loads
-print('Loading function')
+print('Loading wikipedia summarizer function')
 
 
 def lambda_handler(event, context):
@@ -17,8 +17,17 @@ def lambda_handler(event, context):
     
     ## TO DO: Get the wikipedia "entity" from the body of the request
     entity = event["entity"]
-    
-    res = wikipedia.summary(entity, sentences=1) # first sentence, result
+    try:
+        res = wikipedia.summary(entity, sentences=1) # first sentence, result
+        statusCode=200
+    except wikipedia.exceptions.PageError:
+        statusCode=400
+        res="\nText does not exist\n"
+    except wikipedia.exceptions.DisambiguationError:
+        statusCode=400
+        res="\nThere are multiple reference to this word!\n"
+    except:
+        res="\nNo context\n"
 
     # print statements
     print(f"context: {context}, event: {event}")
@@ -27,6 +36,9 @@ def lambda_handler(event, context):
     ## TO DO: Format the response as JSON and return the result
     response = {
         ## your code here
+        "statusCode":statusCode,
+        "hearders":{"Content-type": "application/json"},
+        "body":json.dumps({"message":res})
     }
     
     return response
