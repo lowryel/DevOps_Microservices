@@ -1,0 +1,279 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Thu Jul 28 00:19:49 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\Eugene
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+LOCALAPPDATA = C:\Users\Eugene\AppData\Local
+# environment
+VSCODE_CWD = C:\Users\Eugene\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+# default
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_22872_XYFFXUYROHNVDBWR
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Eugene\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\Eugene\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\Eugene\OneDrive
+# makefile
+CURDIR := c:/Users/Eugene/Desktop/Docker_container/DevOps_Microservices
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile
+MAKEFILE_LIST := 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 22872
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\Eugene\OneDrive
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\Eugene
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Users\Eugene\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Eugene\AppData\Local\Programs\Python\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;�C:\Program Files\nodejs\node_modules\npm\bin�;C:\Program Files\PostgreSQL\13\bin;C:\Program Files (x86)\Tailscale IPN;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Windows\System32\kubectl;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Eugene\scoop\shims;C:\Users\Eugene\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Eugene\AppData\Local\atom\bin;C:\Users\Eugene\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Users\Eugene\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.4\bin;;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Eugene\AppData\Roaming\npm\node_modules;C:\Program Files\PostgreSQL\13\bin;C:\Users\Eugene\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Users\Eugene\AppData\Roaming\npm
+# environment
+COMPUTERNAME = DESKTOP-JIUJUOR
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132858727838232421
+# environment
+ANSIBLESCRIPTS = /home/lowry/.local/bin
+# environment
+LOGONSERVER = \\DESKTOP-JIUJUOR
+# environment
+USERNAME = Eugene
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-JIUJUOR
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# makefile
+.DEFAULT_GOAL := 
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-JIUJUOR
+# environment
+NUMBER_OF_PROCESSORS = 4
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\Eugene\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.4\bin;
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\Eugene\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\47c782de7bae6d4ff4ccbb1e617a487f-1.69.2-main-sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFI 
+XES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = 3a09
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+# variable set hash-table stats:
+# Load=93/1024=9%, Rehash=0, Collisions=8/117=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key c:/Users/Eugene/Desktop/Docker_container/DevOps_Microservices, mtime 1658898718): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile.mak:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 23 / storage = 296 B / avg = 12 B
+# current buf: size = 8174 B / used = 296 B / count = 23 / avg = 12 B
+
+# strcache performance: lookups = 26 / hit rate = 11%
+# hash-table stats:
+# Load=23/8192=0%, Rehash=0, Collisions=0/26=0%
+# Finished Make data base on Thu Jul 28 00:19:49 2022
+
+ 

@@ -16,6 +16,7 @@ validate-circleci:
 run-circleci-local:
 	# See https://circleci.com/docs/2.0/local-cli/#running-a-job
 	circleci local execute
+	# circleci local execute --job build
 
 lint:
 	hadolint demos/flask-sklearn-student-starter/Dockerfile
