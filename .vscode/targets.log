@@ -7,9 +7,8 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Jul 28 00:19:49 2022
+# Make data base, printed on Tue Aug 02 09:17:31 2022
 
 # Variables
 
@@ -38,7 +37,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_22872_XYFFXUYROHNVDBWR
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19608_ESXEDBMXFVIGHVZN
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -86,7 +85,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 22872
+VSCODE_PID = 19608
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -118,7 +117,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Users\Eugene\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Eugene\AppData\Local\Programs\Python\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;�C:\Program Files\nodejs\node_modules\npm\bin�;C:\Program Files\PostgreSQL\13\bin;C:\Program Files (x86)\Tailscale IPN;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Windows\System32\kubectl;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Eugene\scoop\shims;C:\Users\Eugene\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Eugene\AppData\Local\atom\bin;C:\Users\Eugene\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Users\Eugene\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.4\bin;;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Eugene\AppData\Roaming\npm\node_modules;C:\Program Files\PostgreSQL\13\bin;C:\Users\Eugene\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Users\Eugene\AppData\Roaming\npm
+PATH = C:\Users\Eugene\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Eugene\AppData\Local\Programs\Python\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;�C:\Program Files\nodejs\node_modules\npm\bin�;C:\Program Files\PostgreSQL\13\bin;C:\Program Files (x86)\Tailscale IPN;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Windows\System32\kubectl;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Kubernetes\Minikube;C:\Users\Eugene\scoop\shims;C:\Users\Eugene\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Eugene\AppData\Local\atom\bin;C:\Users\Eugene\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Users\Eugene\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.4\bin;;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Eugene\AppData\Roaming\npm\node_modules;C:\Program Files\PostgreSQL\13\bin;C:\Users\Eugene\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Users\Eugene\AppData\Roaming\npm
 # environment
 COMPUTERNAME = DESKTOP-JIUJUOR
 # default
@@ -185,11 +184,11 @@ TEMP = C:\Users\Eugene\AppData\Local\Temp
 VSCODE_IPC_HOOK = \\.\pipe\47c782de7bae6d4ff4ccbb1e617a487f-1.69.2-main-sock
 # default
 .RECIPEPREFIX := 
-# automatic
+# automa 
+tic
 <F = $(notdir $<)
 # default
-SUFFI 
-XES := 
+SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
@@ -209,9 +208,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/Eugene/Desktop/Docker_container/DevOps_Microservices, mtime 1658898718): 16 files, no impossibilities.
+# . (key c:/Users/Eugene/Desktop/Docker_container/DevOps_Microservices, mtime 1658999489): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -268,12 +267,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 296 B / avg = 12 B
-# current buf: size = 8174 B / used = 296 B / count = 23 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 24 / storage = 307 B / avg = 12 B
+# current buf: size = 8174 B / used = 307 B / count = 24 / avg = 12 B
 
-# strcache performance: lookups = 26 / hit rate = 11%
+# strcache performance: lookups = 27 / hit rate = 11%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Thu Jul 28 00:19:49 2022
+# Load=24/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Tue Aug 02 09:17:31 2022
 
  
