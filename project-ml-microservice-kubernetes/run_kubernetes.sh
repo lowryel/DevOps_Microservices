@@ -5,11 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-lowry09/ml-microservice-kubernetes:v1.0.0
+dockerpath=lowry09/ml-microservice-kubernetes:v1.0.0
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run ml-microservice-kubernetes --image=ml-microservice-kubernetes --port=80
+kubectl run ml-microservice-kubernetes --image=lowry09/ml-microservice-kubernetes:v1.0.0 --port=80 --labels app=mlops-microservice-kubernetes
 
 
 # Step 3:

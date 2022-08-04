@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image
-docker build -tag=api .
+docker build --tag=api .
 
 # Step 2: 
 # List docker images
