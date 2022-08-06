@@ -11,7 +11,7 @@ dockerpath=lowry09/ml-kubernetes:v1.0.1
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker tag ml-microservice-kubernetes $dockerpath
+docker tag ml-kubernetes $dockerpath
 docker login
 
 # Step 3:
