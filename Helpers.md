@@ -193,3 +193,12 @@ Access the app locally at http://127.0.0.1:5000/
 
 # Grab your application logs for your pod (given a pod named my-pod) by running this 
 command: kubectl logs my-pod
+
+# How to install kubectl and eksctl
+ *** kubectl
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
+*** eksctl
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
