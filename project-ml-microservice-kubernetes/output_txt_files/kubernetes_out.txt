@@ -11,7 +11,7 @@ Handling connection for 5000
 Handling connection for 5000
 
 
-<Output got from the second terminal>
+<Output got from the second terminal after running make_prediction>
 
 Port: 5000
 {
