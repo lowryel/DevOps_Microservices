@@ -18,5 +18,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward lowry09/ml-kubernetes:v1.0.1 5000:80
+kubectl port-forward ml-kubernetes 5000:80
 

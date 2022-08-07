@@ -1,1 +1,22 @@
 <paste log output from Kubernetes-mediated prediction, here>
+
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ kubectl get pods
+NAME            READY   STATUS    RESTARTS   AGE
+ml-kubernetes   1/1     Running   0          55s
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ kubectl port-forward ml-kubernetes 5000:80
+Forwarding from 127.0.0.1:5000 -> 80
+Forwarding from [::1]:5000 -> 80
+Handling connection for 5000
+Handling connection for 5000
+Handling connection for 5000
+
+
+<Output got from the second terminal>
+
+Port: 5000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
