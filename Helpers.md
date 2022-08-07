@@ -206,3 +206,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 ***** minikube ********
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+**********hadolint for linting Dockerfile**************
+sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+                sudo chmod +x /bin/hadolint
