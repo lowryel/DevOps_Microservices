@@ -14,9 +14,12 @@
 
 
 Port: 5000
-{
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   260  100    48  100   212    147    652 --:--:-- --:--:-- --:--:--   804{
   "prediction": [
     20.35373177134412
   ]
 }
+
 
