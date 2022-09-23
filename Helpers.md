@@ -32,11 +32,11 @@ make: *** [install] Error 1
 
 I have a quick fix. It works on Ubuntu O.S.
 First, the dependencies in requirements.txt works best in python3.7 so you might be having this issue if you are running on an higher python version. I have the following commands to install, set up venv and install the dependencies.
-# enter a folder 
+- enter a folder 
 
 $ cd ~/Desktop
 
-# install python 3.7 and needed dependencies
+- install python 3.7 and needed dependencies
 $ sudo apt update
 
 $ sudo apt install software-properties-common
@@ -49,23 +49,23 @@ $ sudo apt install python3.7-venv
 
 $ sudo apt install python3.7-distutils
 
-# install pip
+* install pip
 $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 $ python3.7 get-pip.py --user
 
-# confirm your python version - it won't change the default version too
+* confirm your python version - it won't change the default version too
 $ python3.7 -V && pip3 -V
 
-# Installing VirtualEnv
+* Installing VirtualEnv
 $ python3.7 -m pip install virtualenv
 
-# Creating Virtual Environment called devops
+* Creating Virtual Environment called devops
 $ python3.7 -m virtualenv ~/.devops
 
-# To activate devops venv
+* To activate devops venv
 source ~/.devops/bin/activate
 
-# Install requirements.txt
+* Install requirements.txt
 (.devops)$ cd /path/to/project/folder
 
 (.devops)$ make install
@@ -75,27 +75,27 @@ This worked well for me.
 
 FROM python:3.7.3-stretch
 
-# Working directory
+Working directory
 WORKDIR /app
 
-# Copy source code to working dorectory
+Copy source code to working dorectory
 COPY . app.py /app/
 
-# Install package form requirements.txt
-# Hadolint ignore=DL3013
+Install package form requirements.txt
+Hadolint ignore=DL3013
 RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Use this tp run docker
+Use this tp run docker
 $ docker build --tag=app .
 $ docker image ls
 $ docker run -it app bash
 
 
-# Run this command to rename the container and the image
+Run this command to rename the container and the image
 $ docker run -it --rm --name my-running-app my-python-app
 
-# Install minikube from here
+Install minikube from here
 Follow the guide to install minikube for kubernetes
 https://minikube.sigs.k8s.io/docs/start/
 
@@ -118,7 +118,7 @@ How it works?
         Your default region
         A dedicated VPC
 
-# However, you can specify all the above details explicitly, for example:
+- However, you can specify all the above details explicitly, for example:
     eksctl create cluster --name myCluster --nodes=4
 
     Create an advanced cluster
@@ -127,7 +127,7 @@ How it works?
 
     eksctl create cluster --config-file=<path>
 
-# To list the details of the cluster, you can use the following command:
+- To list the details of the cluster, you can use the following command:
     We will not discuss the option above to use configuration files, however, you can have a look at an example here.
 
     List the details
@@ -135,14 +135,14 @@ How it works?
 
     eksctl get cluster [--name=<name>][--region=<region>]
 
-# Delete a cluster
+- Delete a cluster
     Run a simple command, it will delete the cluster as well as all the associated resources.
 
     eksctl delete cluster --name=<name> [--region=<region>]
 
 There are many more options while creating a cluster, such as defining the auto-scaling size (min-max number of nodes), and SSH access to the nodes.
 
-# Use this to view the progress of the cluster creation
+- Use this to view the progress of the cluster creation
     eksctl get cluster --name=<name> [--region=<region>]
 
 
@@ -150,63 +150,65 @@ There are many more options while creating a cluster, such as defining the auto-
 
 Let's deploy a sample Python "Hello World" app to the kubernetes cluster.
 
-# Assuming you have already cloned the course repo as
+- Assuming you have already cloned the course repo as
 git clone git clone https://github.com/udacity/DevOps_Microservices.git
-# Move to the exercise folder if you want to write Dockerfile from scratch
+- Move to the exercise folder if you want to write Dockerfile from scratch
 cd DevOps_Microservices/Lesson-3-Containerization/python-helloworld
 
 Once you are in the right folder, run these commands and read the inline comments carefully.
 
-# Ensure Docker Desktop is running locally
+- Ensure Docker Desktop is running locally
 docker --version
-# Build an image using the Dockerfile in the current directory
+- Build an image using the Dockerfile in the current directory
 docker build -t python-helloworld .
 docker images # To see the image you just built
-# Run a container
+- Run a container
 docker run -d -p 5000:5000 python-helloworld
-# Check the output at http://localhost:5000/ or http://0.0.0.0:5000/ or http://127.0.0.1:5000/
+- Check the output at http://localhost:5000/ or http://0.0.0.0:5000/ or http://127.0.0.1:5000/
 docker ps
-# Now, stop the container.
-# Tag locally before pushing to the Dockerhub
-# We have used a sample Dockerhub profile /lowry09
-# Replace sudkul/ with your Dockerhub profile
+- Now, stop the container.
+- Tag locally before pushing to the Dockerhub
+- We have used a sample Dockerhub profile /lowry09
+- Replace sudkul/ with your Dockerhub profile
 docker tag python-helloworld lowry09/python-helloworld:v1.0.0
 docker images
-# Log into the Dockerhub from your local terminal
+- Log into the Dockerhub from your local terminal
 docker login
-# Replace sudkul/ with your Dockerhub profile
+- Replace sudkul/ with your Dockerhub profile
 docker push sudkul/python-helloworld:v1.0.0
-# Check the image in your Dockerhub online at https://hub.docker.com/repository/docker/lowry09/python-helloworld
+- Check the image in your Dockerhub online at https://hub.docker.com/repository/docker/lowry09/python-helloworld
 
 Once your Docker image is publicly available, you can deploy it to the kubernetes cluster.
 
-# Assuming the Kubernetes cluster is ready
+* Assuming the Kubernetes cluster is ready
 kubectl get nodes
-# Deploy an App from the Dockerhub to the Kubernetes Cluster
+- Deploy an App from the Dockerhub to the Kubernetes Cluster
 kubectl create deploy python-helloworld --image=lowry09/python-helloworld:v1.0.0
-# See the status
+* See the status
 kubectl get deploy,rs,svc,pods
-# Port forward 
+- Port forward 
 kubectl port-forward pod/python-helloworld-84857d9565-2598m --address 0.0.0.0 5000:5000
 
 Access the app locally at http://127.0.0.1:5000/
 
-# Grab your application logs for your pod (given a pod named my-pod) by running this 
+- Grab your application logs for your pod (given a pod named my-pod) by running this 
 command: kubectl logs my-pod
 
 # How to install kubectl and eksctl
- *** kubectl
+ * kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
-*** eksctl
+* eksctl
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 
-***** minikube ********
+* minikube 
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+    
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
-**********hadolint for linting Dockerfile**************
+* hadolint for linting Dockerfile
 sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-                sudo chmod +x /bin/hadolint
+
+sudo chmod +x /bin/hadolint
