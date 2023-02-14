@@ -146,8 +146,8 @@ There are many more options while creating a cluster, such as defining the auto-
     eksctl get cluster --name=<name> [--region=<region>]
 
 
-################## Deploy a Sample App ####################
-
+* **Deploy a Sample App**
+-------------------------------------------------------
 Let's deploy a sample Python "Hello World" app to the kubernetes cluster.
 
 - Assuming you have already cloned the course repo as
@@ -196,19 +196,23 @@ command: kubectl logs my-pod
 
 # How to install kubectl and eksctl
  * kubectl
+-------------------------------------------------
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 * eksctl
+------------------------------------------------------
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 
-* minikube 
+* minikube
+-----------------------------------------------------
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
     
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 * hadolint for linting Dockerfile
+-------------------------------------------------------------------
 sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
 
 sudo chmod +x /bin/hadolint
